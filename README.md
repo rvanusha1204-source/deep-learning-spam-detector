@@ -33,9 +33,6 @@ Evaluated on a held-out test set of 1,115 messages (966 Ham, 149 Spam).
 | TF-IDF + Naive Bayes | 97.13% | 1.00 | 0.79 | 0.88 |
 | Bi-LSTM (PyTorch) | 98.12% | 0.94 | 0.92 | 0.93 |
 
-![Confusion Matrix](outputs/confusion_matrix.png)
-![Training Curves](outputs/training_curves.png)
-
 **Key findings**
 - The Bi-LSTM beats the baseline in accuracy (98.12% vs 97.13%) and in spam F1 (0.93 vs 0.88).
 - Naive Bayes never flags a genuine message as spam (precision 1.00), but it misses about 21% of real spam (recall 0.79).
@@ -58,8 +55,8 @@ Evaluated on a held-out test set of 1,115 messages (966 Ham, 149 Spam).
 ## Getting Started
 ```bash
 # 1. Clone
-git clone https://github.com/<your-username>/<repo-name>.git
-cd <repo-name>
+git clone  https://github.com/rvanusha1204-source/deep-learning-spam-detector.git
+cd deep-learning-spam-detector
 
 # 2. Create and activate a virtual environment (Windows)
 py -3.11 -m venv venv
